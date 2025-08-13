@@ -1,0 +1,21 @@
+[1.203s] Invoking command in '/home/huzy/rov_moveit2_ws/src/rov_description': PYTHONPATH=/home/huzy/rov_moveit2_ws/build/rov_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/huzy/rov_moveit2_ws/install/rov_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/rov_description build --build-base /home/huzy/rov_moveit2_ws/build/rov_description/build install --record /home/huzy/rov_moveit2_ws/build/rov_description/install.log --single-version-externally-managed install_data
+[1.526s] running egg_info
+[1.526s] writing ../../build/rov_description/rov_description.egg-info/PKG-INFO
+[1.527s] writing dependency_links to ../../build/rov_description/rov_description.egg-info/dependency_links.txt
+[1.527s] writing entry points to ../../build/rov_description/rov_description.egg-info/entry_points.txt
+[1.528s] writing requirements to ../../build/rov_description/rov_description.egg-info/requires.txt
+[1.528s] writing top-level names to ../../build/rov_description/rov_description.egg-info/top_level.txt
+[1.530s] reading manifest file '../../build/rov_description/rov_description.egg-info/SOURCES.txt'
+[1.532s] writing manifest file '../../build/rov_description/rov_description.egg-info/SOURCES.txt'
+[1.532s] running build
+[1.532s] running build_py
+[1.534s] running install
+[1.534s] running install_lib
+[1.538s] running install_data
+[1.540s] copying urdf/rov.urdf -> /home/huzy/rov_moveit2_ws/install/rov_description/share/rov_description/urdf
+[1.542s] running install_egg_info
+[1.545s] removing '/home/huzy/rov_moveit2_ws/install/rov_description/lib/python3.10/site-packages/rov_description-0.0.0-py3.10.egg-info' (and everything under it)
+[1.545s] Copying ../../build/rov_description/rov_description.egg-info to /home/huzy/rov_moveit2_ws/install/rov_description/lib/python3.10/site-packages/rov_description-0.0.0-py3.10.egg-info
+[1.547s] running install_scripts
+[1.584s] writing list of installed files to '/home/huzy/rov_moveit2_ws/build/rov_description/install.log'
+[1.603s] Invoked command in '/home/huzy/rov_moveit2_ws/src/rov_description' returned '0': PYTHONPATH=/home/huzy/rov_moveit2_ws/build/rov_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/huzy/rov_moveit2_ws/install/rov_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/rov_description build --build-base /home/huzy/rov_moveit2_ws/build/rov_description/build install --record /home/huzy/rov_moveit2_ws/build/rov_description/install.log --single-version-externally-managed install_data

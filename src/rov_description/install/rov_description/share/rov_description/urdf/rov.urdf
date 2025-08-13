@@ -1,0 +1,507 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="rov_description">
+  <link name="dummy">
+   </link>
+  <joint name="dummy_joint" type="fixed">
+     <parent link="dummy"/>
+     <child link="base_link"/>
+   </joint>
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-9.54942197113275E-17 -0.0169316466454037 0.0760137668809909"
+        rpy="0 0 0" />
+      <mass value="0.00001" />
+      <inertia
+        ixx="10"
+        ixy="0.0"
+        ixz="0.0"
+        iyy="10"
+        iyz="0.0"
+        izz="10" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rov_description/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rov_description/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <!--
+  <link
+    name="BottomLink">
+    <inertial>
+      <origin
+        xyz="-1.93184908742383E-16 3.03331228970607E-16 -0.136"
+        rpy="0 0 0" />
+      <mass value="100" />
+      <inertia
+        ixx="10"
+        ixy="0.0"
+        ixz="0.0"
+        iyy="10"
+        iyz="0.0"
+        izz="10" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rov_description/meshes/BottomLink.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rov_description/meshes/BottomLink.STL" />
+      </geometry>
+    </collision>
+  </link>
+  -->
+  <!--
+  <joint
+    name="BottomJoint"
+    type="fixed">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="BottomLink" />
+    <child
+      link="base_link" />
+    <axis
+      xyz="0 0 0" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="100"
+      velocity="1" />
+  </joint>
+  -->
+  <link
+    name="Link1">
+    <inertial>
+      <origin
+        xyz="-0.0214118171434422 0.0246967361993189 0.0478810662050555"
+        rpy="0 0 0" />
+      <mass value="0.00001" />
+      <inertia
+        ixx="10"
+        ixy="0.0"
+        ixz="0.0"
+        iyy="10"
+        iyz="0.0"
+        izz="10" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rov_description/meshes/Link1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rov_description/meshes/Link1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint1"
+    type="revolute">
+    <origin
+      xyz="0 0 0.141"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="Link1" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="100"
+      velocity="1" />
+  </joint>
+  <link
+    name="Link2">
+    <inertial>
+      <origin
+        xyz="0.0480026023001568 -0.0330328838368766 0.132004691822709"
+        rpy="0 0 0" />
+      <mass value="0.00001" />
+      <inertia
+        ixx="10"
+        ixy="0.0"
+        ixz="0.0"
+        iyy="10"
+        iyz="0.0"
+        izz="10" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rov_description/meshes/Link2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rov_description/meshes/Link2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint2"
+    type="revolute">
+    <origin
+      xyz="-0.048 0.0525000000000002 0.0734999999999998"
+      rpy="0 0 0" />
+    <parent
+      link="Link1" />
+    <child
+      link="Link2" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-1.57"
+      upper="0"
+      effort="100"
+      velocity="1" />
+  </joint>
+  <link
+    name="Link3">
+    <inertial>
+      <origin
+        xyz="0.0562367446635534 -0.0430418585461576 0.0736836951426565"
+        rpy="0 0 0" />
+      <mass value="0.00001" />
+      <inertia
+        ixx="10"
+        ixy="0.0"
+        ixz="0.0"
+        iyy="10"
+        iyz="0.0"
+        izz="10" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rov_description/meshes/Link3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rov_description/meshes/Link3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint3"
+    type="revolute">
+    <origin
+      xyz="0 0 0.264"
+      rpy="0 0 0" />
+    <parent
+      link="Link2" />
+    <child
+      link="Link3" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-1.57"
+      upper="0"
+      effort="100"
+      velocity="1" />
+  </joint>
+  <link
+    name="Link4">
+    <inertial>
+      <origin
+        xyz="1.47651866411383E-09 2.62065835256717E-12 0.0745274829697697"
+        rpy="0 0 0" />
+      <mass value="0.00001" />
+      <inertia
+        ixx="10"
+        ixy="0.0"
+        ixz="0.0"
+        iyy="10"
+        iyz="0.0"
+        izz="10" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rov_description/meshes/Link4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rov_description/meshes/Link4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint4"
+    type="revolute">
+    <origin
+      xyz="0.0479999999999997 -0.052499999999999 0.143"
+      rpy="0 0 0" />
+    <parent
+      link="Link3" />
+    <child
+      link="Link4" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="100"
+      velocity="1" />
+  </joint>
+  <link
+    name="LinkGG">
+    <inertial>
+      <origin
+        xyz="-5.40504994489561E-14 2.65572929566462E-16 -0.0275462451340704"
+        rpy="0 0 0" />
+      <mass value="0.00001" />
+      <inertia
+        ixx="10"
+        ixy="0.0"
+        ixz="0.0"
+        iyy="10"
+        iyz="0.0"
+        izz="10" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rov_description/meshes/LinkGG.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rov_description/meshes/LinkGG.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="JointGG"
+    type="fixed">
+    <origin
+      xyz="0 0 0.187092613729999"
+      rpy="0 0 0" />
+    <parent
+      link="Link4" />
+    <child
+      link="LinkGG" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="LinkGL">
+    <inertial>
+      <origin
+        xyz="-0.0413269216883504 0.0239705087446804 0.0414054560452126"
+        rpy="0 0 0" />
+      <mass value="0.00001" />
+      <inertia
+        ixx="10"
+        ixy="0.0"
+        ixz="0.0"
+        iyy="10"
+        iyz="0.0"
+        izz="10" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rov_description/meshes/LinkGL.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rov_description/meshes/LinkGL.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="JointGL"
+    type="revolute">
+    <origin
+      xyz="-0.0400000000000017 -0.024 0.178499999999999"
+      rpy="0 0 0" />
+    <parent
+      link="Link4" />
+    <child
+      link="LinkGL" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="0"
+      upper="0.872"
+      effort="100"
+      velocity="1" />
+  </joint>
+  <link
+    name="LinkGR">
+    <inertial>
+      <origin
+        xyz="0.0413269216874473 0.0239705058046802 0.0414054560479873"
+        rpy="0 0 0" />
+      <mass value="0.00001" />
+      <inertia
+        ixx="10"
+        ixy="0.0"
+        ixz="0.0"
+        iyy="10"
+        iyz="0.0"
+        izz="10" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rov_description/meshes/LinkGR.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rov_description/meshes/LinkGR.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="JointGR"
+    type="revolute">
+    <origin
+      xyz="0.04 -0.024 0.178499999999999"
+      rpy="0 0 0" />
+    <parent
+      link="Link4" />
+    <child
+      link="LinkGR" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      lower="0"
+      upper="0.872"
+      effort="100"
+      velocity="1" />
+  </joint>
+</robot>

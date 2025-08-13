@@ -1,0 +1,46 @@
+[0.818s] Invoking command in '/home/huzy/rov_moveit2_ws/src/rov_description': PYTHONPATH=/home/huzy/rov_moveit2_ws/build/rov_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/huzy/rov_moveit2_ws/install/rov_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/rov_description build --build-base /home/huzy/rov_moveit2_ws/build/rov_description/build install --record /home/huzy/rov_moveit2_ws/build/rov_description/install.log --single-version-externally-managed install_data
+[1.113s] running egg_info
+[1.114s] creating ../../build/rov_description/rov_description.egg-info
+[1.114s] writing ../../build/rov_description/rov_description.egg-info/PKG-INFO
+[1.114s] writing dependency_links to ../../build/rov_description/rov_description.egg-info/dependency_links.txt
+[1.115s] writing entry points to ../../build/rov_description/rov_description.egg-info/entry_points.txt
+[1.115s] writing requirements to ../../build/rov_description/rov_description.egg-info/requires.txt
+[1.115s] writing top-level names to ../../build/rov_description/rov_description.egg-info/top_level.txt
+[1.115s] writing manifest file '../../build/rov_description/rov_description.egg-info/SOURCES.txt'
+[1.116s] reading manifest file '../../build/rov_description/rov_description.egg-info/SOURCES.txt'
+[1.117s] writing manifest file '../../build/rov_description/rov_description.egg-info/SOURCES.txt'
+[1.118s] running build
+[1.118s] running build_py
+[1.118s] creating /home/huzy/rov_moveit2_ws/build/rov_description/build
+[1.118s] creating /home/huzy/rov_moveit2_ws/build/rov_description/build/lib
+[1.118s] creating /home/huzy/rov_moveit2_ws/build/rov_description/build/lib/rov_description
+[1.118s] copying rov_description/__init__.py -> /home/huzy/rov_moveit2_ws/build/rov_description/build/lib/rov_description
+[1.119s] running install
+[1.119s] running install_lib
+[1.120s] creating /home/huzy/rov_moveit2_ws/install/rov_description/lib/python3.10/site-packages/rov_description
+[1.120s] copying /home/huzy/rov_moveit2_ws/build/rov_description/build/lib/rov_description/__init__.py -> /home/huzy/rov_moveit2_ws/install/rov_description/lib/python3.10/site-packages/rov_description
+[1.121s] byte-compiling /home/huzy/rov_moveit2_ws/install/rov_description/lib/python3.10/site-packages/rov_description/__init__.py to __init__.cpython-310.pyc
+[1.121s] running install_data
+[1.122s] creating /home/huzy/rov_moveit2_ws/install/rov_description/share/ament_index
+[1.122s] creating /home/huzy/rov_moveit2_ws/install/rov_description/share/ament_index/resource_index
+[1.122s] creating /home/huzy/rov_moveit2_ws/install/rov_description/share/ament_index/resource_index/packages
+[1.122s] copying resource/rov_description -> /home/huzy/rov_moveit2_ws/install/rov_description/share/ament_index/resource_index/packages
+[1.122s] copying package.xml -> /home/huzy/rov_moveit2_ws/install/rov_description/share/rov_description
+[1.123s] creating /home/huzy/rov_moveit2_ws/install/rov_description/share/rov_description/urdf
+[1.123s] copying urdf/rov.urdf -> /home/huzy/rov_moveit2_ws/install/rov_description/share/rov_description/urdf
+[1.123s] creating /home/huzy/rov_moveit2_ws/install/rov_description/share/rov_description/meshes
+[1.123s] copying meshes/BottomLink.STL -> /home/huzy/rov_moveit2_ws/install/rov_description/share/rov_description/meshes
+[1.123s] copying meshes/base_link.STL -> /home/huzy/rov_moveit2_ws/install/rov_description/share/rov_description/meshes
+[1.123s] copying meshes/Link4.STL -> /home/huzy/rov_moveit2_ws/install/rov_description/share/rov_description/meshes
+[1.123s] copying meshes/LinkGG.STL -> /home/huzy/rov_moveit2_ws/install/rov_description/share/rov_description/meshes
+[1.124s] copying meshes/Link1.STL -> /home/huzy/rov_moveit2_ws/install/rov_description/share/rov_description/meshes
+[1.124s] copying meshes/Link2.STL -> /home/huzy/rov_moveit2_ws/install/rov_description/share/rov_description/meshes
+[1.125s] copying meshes/Link3.STL -> /home/huzy/rov_moveit2_ws/install/rov_description/share/rov_description/meshes
+[1.125s] copying meshes/LinkGR.STL -> /home/huzy/rov_moveit2_ws/install/rov_description/share/rov_description/meshes
+[1.126s] copying meshes/LinkGL.STL -> /home/huzy/rov_moveit2_ws/install/rov_description/share/rov_description/meshes
+[1.126s] creating /home/huzy/rov_moveit2_ws/install/rov_description/share/rov_description/launch
+[1.126s] running install_egg_info
+[1.128s] Copying ../../build/rov_description/rov_description.egg-info to /home/huzy/rov_moveit2_ws/install/rov_description/lib/python3.10/site-packages/rov_description-0.0.0-py3.10.egg-info
+[1.129s] running install_scripts
+[1.153s] writing list of installed files to '/home/huzy/rov_moveit2_ws/build/rov_description/install.log'
+[1.175s] Invoked command in '/home/huzy/rov_moveit2_ws/src/rov_description' returned '0': PYTHONPATH=/home/huzy/rov_moveit2_ws/build/rov_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/huzy/rov_moveit2_ws/install/rov_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/rov_description build --build-base /home/huzy/rov_moveit2_ws/build/rov_description/build install --record /home/huzy/rov_moveit2_ws/build/rov_description/install.log --single-version-externally-managed install_data

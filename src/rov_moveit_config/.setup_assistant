@@ -1,0 +1,25 @@
+moveit_setup_assistant_config:
+  urdf:
+    package: rov_description
+    relative_path: urdf/rov.urdf
+  srdf:
+    relative_path: config/rov_description.srdf
+  package_settings:
+    author_name: huzy
+    author_email: 506406616@qq.com
+    generated_timestamp: 1754986130
+  control_xacro:
+    command:
+      - position
+    state:
+      - position
+      - velocity
+  modified_urdf:
+    xacros:
+      - control_xacro
+  control_xacro:
+    command:
+      - position
+    state:
+      - position
+      - velocity

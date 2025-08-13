@@ -1,0 +1,26 @@
+# MoveIt uses this configuration for controller management
+
+moveit_controller_manager: moveit_simple_controller_manager/MoveItSimpleControllerManager
+
+moveit_simple_controller_manager:
+  controller_names:
+    - arm_group_controller
+    - gripper_group_controller
+
+  arm_group_controller:
+    type: FollowJointTrajectory
+    joints:
+      - Joint1
+      - Joint2
+      - Joint3
+      - Joint4
+    action_ns: follow_joint_trajectory  # 新增：与ros2_control控制器的动作命名空间匹配
+    default: true  # 新增：设为默认控制器
+
+  gripper_group_controller:
+    type: FollowJointTrajectory
+    joints:
+      - JointGL
+      - JointGR
+    action_ns: follow_joint_trajectory
+    default: true

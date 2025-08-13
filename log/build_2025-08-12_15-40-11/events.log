@@ -1,0 +1,4 @@
+[0.000000] (-) TimerEvent: {}
+[0.001640] (-) JobUnselected: {'identifier': 'rov_description'}
+[0.001861] (-) JobUnselected: {'identifier': 'rov_moveit_config'}
+[0.001910] (-) EventReactorShutdown: {}
